@@ -1,0 +1,19 @@
+
+.calendar{
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar .react-calendar__tile{
+  background-color: lightgrey;
+  border-radius: 5px;
+  border-color: white;
+}
+
+.calendar .react-calendar__tile{
+  background-color: lightgrey;
+  border-radius: 5px;
+  border-color: white;
+}

@@ -1,26 +1,16 @@
 
-import './App.css';
-import Data from './components/Data.jsx';
-import LineChart from './components/LineChart.jsx';
 
-const styles = {
-   display: 'flex',
-   justifyContent: 'space-between'
-};
+
+import {NavBar} from "./components/NavBar";
+import {Dashboard} from "./components/Dashboard";
 
 function App() {
-  return (
-     <div className="App">
-       <div style={styles}>
-           <div className="col-2">
-               <Data/>
-           </div>
-           <div className="col-10">
-             <LineChart />
-           </div>
+   return (
+       <div className="App">
+           <NavBar/>
+           <Dashboard/>
        </div>
-     </div>
-  );
+   );
 }
 
 export default App;

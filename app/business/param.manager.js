@@ -23,10 +23,18 @@ function create() {
       }
     }
 
+    async function getByDate(content){
+      let result = paramDAO.getByDate(content);
+      if (result) {
+          return result;
+      }
+    }
+
     return {
         query: query,
         get: get,
-        getLast: getLast
+        getLast: getLast,
+        getByDate: getByDate
     };
 }
 

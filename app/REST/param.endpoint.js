@@ -29,6 +29,14 @@ const paramEndpoint = (router) => {
         }
     });
 
+    router.get('/api/params/search/:date', async (request, response, next) => {
+        try {
+            let result = await business.getParamManager().getByDate(request.params.date);
+            response.status(200).send(result);
+        } catch (error) {
+            applicationException.errorHandler(error, response);
+        }
+    });
 
 };
 export default paramEndpoint;
